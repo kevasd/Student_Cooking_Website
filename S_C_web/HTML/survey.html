@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Student Cooking website</title>
+<link rel="stylesheet" type="text/css" href="..\CSS\cookingStyles.css">
+<script src="../JS/setup.js"></script>
+<script src="../JS/server_inter.js"></script>
+</head>
+
+<body onload="setupjs()">
+
+<!-- Page Header -->
+<header>
+<h1 class="home_h">Cooking for Students</h1>
+<a href="./home.html">
+<img class="imageBanner" src="../Images/cookingBanner.jpg">
+</a>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+<ul>
+<li class ="nav_item"><a  href="home.html">Home</a></li>
+<li class ="nav_item"><a id="hrpers2" href="italian.html">Italian</a></li>
+<li class ="nav_item"><a id="hrpers3" href="indian.html">Indian</a></li>
+<li class ="nav_item"><a id="hrpers4" href="thai.html">Thai</a></li>
+<li class ="nav_item"><a id="hrpers5" href="chinese.html">Chinese</a></li>
+<li class ="nav_item"><a id="hrpers6" href="survey.html">Survey</a></li>
+</ul>
+</nav>
+
+<!-- The main content of the page -->
+<main>
+<form method="POST" action="http://127.0.0.1/S_C_web/PHP/test.php" target="_self_">
+    <h2>Personal Detail</h2>
+    <section id="i_fname_f" style="background-blend-mode: lighten;background-color:#fffeff;height: fit-content;margin-top: 10px;margin-bottom: 10px;">
+    <input id="i_fname" type="text" required="false" name="firstname" placeholder="Firstname" maxlength="20" style="width:300px;" >
+    <br>
+    </section>
+    <section id="i_fname_f"style="background-blend-mode: lighten;background-color:#fffeff;height: fit-content;margin-top: 10px;margin-bottom: 10px;" >
+    <input id="i_lname" type="text" required="false" name="lastname" placeholder="Lastname" maxlength="20" style="width:300px" >
+    <br>
+    </section>
+    <br>
+    <section id="age" style="margin-top: -10px;margin-bottom: 10px;">
+    <input type="radio" id="u_25" name="age" value="young">
+    <label for="u_25">&nbsp <25 </label>
+        <input type="radio" id="o_25" name="age" value="mid_age">
+        <label for="o_25">&nbsp 25 - 40</label>
+            <input type="radio" id="o_40" name="age" value="old">
+        <label for="o_40">&nbsp >40 </label>
+            <input type="radio" id="r_n_s" name="age" value="u_kn_own">
+        <label for="r_n_S">&nbsp rather not say</label>
+        <!--When using vs cod 25 tag is created don't know why 
+        but it worksrecieving server to 
+         accept javascript input where there is sufficient effort to block xss -->
+    </section>
+    <input type="submit" value="Submit  " onclick="sender()">
+    </form>
+</form>
+</main>
+
+<!-- Page Footer -->
+<footer>
+<div class="fotter_c">
+<a href="https://www.jamieoliver.com/">Jamie Oliver</a>
+<a href="https://www.gordonramsay.com/">Gordon Ramsay</a>
+<a href="https://www.jamesmartinchef.co.uk"> James Martin</a>
+</div>
+</footer>
+
+</body>
+</html>

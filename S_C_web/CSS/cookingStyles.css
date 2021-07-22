@@ -1,0 +1,72 @@
+/* The Universal Selector has been used here to cancel the browser default margins and */
+/* padding for every page element.  This ensures that only assigned */
+/* margin and padding values are implemented when viewing pages. */
+* {margin:0;padding:0}
+
+/* Background Colours */
+body {background-color:rgb(255, 79, 00);}
+nav,footer {background-color:#964B00;}
+main {background-color:#FFFDD0;}
+.sect_one{background-color:white;}
+.sect_one > * {background-color:inherit;}
+
+
+
+/* Text Properties */
+nav > ul > li > a {color:black;margin-right:10px;text-decoration:none;text-align:right;}
+nav > ul > li > a:hover {background-color:orange;color:white;text-decoration:underline;}
+nav > ul > li:hover {background-color:orange;}
+* > li {list-style:none;}
+footer > * > a {color:pink;}
+
+/* Margins */
+
+main{margin-bottom:10px;margin-top:10px;}
+.home_h{margin-top:50px}
+main > section > div > ul * {margin-top:10px;}
+#student_img {margin-bottom: 20px;}
+.ph_cl {margin-right: 20px;margin-bottom: 20px;}
+/* Padding */
+#home_divsion {padding:20px;}
+#home_img {margin-bottom:20px;}
+#h_m_headert {margin-left:20px;}
+footer a {padding-left:10px;}
+.fotter_c {padding-top:10px;}
+.home_h{padding-top:50;}
+
+/* Positioning (Float, Display and Clear) */
+.home_h{display:inline;float:left;}
+.imageBanner{display:inline;float:right;}
+nav,header,footer,main{display:block;}
+#student_img{display:inline;float:left}
+main > p.ph_cl {display:inline;clear:both;}
+.sect_one{clear:both;display:block;}
+.sect_one > #homei_division {display: inline;float:left;}
+.sect_one > #homep_division {display: inline;float:left;}
+main {clear:both;}
+nav > ul > li {clear: both;display:inline;}
+/*footer{position:relative;bottom:0;left:250px;}
+nav,main {position:relative;left:250px;}
+header {position:relative;top:0px;left:250px}*/
+footer a{clear:both;display:block;}
+.thai_ing{display:block}
+input:last-child {align-self: start;}
+
+
+
+/* Element Sizes */
+.sect_one {width:inherit;}
+#homep_division {width:740px;height:360px;}
+footer,header{width:900px;height:90px;clear:both;}
+nav,main {width:900px;}
+body {width:auto;height:auto;}
+#student_img{width:160;height:120px;}
+.imageBanner{height:90px;width:550px;}
+.thai_ing{height:120px;width:160px}
+.sect_one > img {width: 160px;height:480;}
+.sect_one {width:auto;height:auto;}
+nav > ul > li , nav > ul {height:20px;}
+/* Navigation List Properties */
+
+
+
